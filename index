@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copy Email</title>
+</head>
+<body>
+    <script>
+        navigator.clipboard.writeText('your@email.com').then(() => {
+            alert('Email copied to clipboard!');
+        }).catch(err => {
+            alert('Failed to copy email: ' + err);
+        });
+    </script>
+    <p>If not copied automatically, please copy manually: pullinifrancesca@gmail.com</p>
+</body>
+</html>
